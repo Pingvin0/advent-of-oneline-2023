@@ -1,0 +1,1 @@
+print(sum([int(f"{j[0][1]}{j[-1][1]}") for j in [sorted([[ind, i[ind]] for ind in range(len(i)) if i[ind] in "0123456789"], key=lambda x: x[0]) for i in [i.strip() for i in open("input.txt", "r").read().splitlines()]]]))
